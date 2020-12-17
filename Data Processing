@@ -1,0 +1,198 @@
+foo <- read.csv("fish.csv")
+
+attach(foo)
+
+
+names(foo)
+
+
+unique(species)
+unique(downstream_point)
+mean_richness <- c()
+mean_catch <- c()
+
+birkenhead <- foo[which(downstream_point == "birkenhead river"),]
+sum(birkenhead$weeklycatch)
+mean_richness <- append(mean_richness, mean(birkenhead$richness))
+mean_catch <- append(mean_catch, mean(birkenhead$weeklycatch))
+
+47465
+
+chilcotin_con <- foo[which(downstream_point == "chilcotin fraser confluence"),]
+sum(chilcotin_con$weeklycatch)
+774222
+mean_richness <- append(mean_richness, mean(chilcotin_con$richness))
+mean_catch <- append(mean_catch, mean(chilcotin_con$weeklycatch))
+
+
+chilcotin_main <- foo[which(downstream_point == "chilcotin fraser mainstem"),]
+sum(chilcotin_main$weeklycatch)
+126852
+mean_richness <- append(mean_richness, mean(chilcotin_main$richness))
+mean_catch <- append(mean_catch, mean(chilcotin_main$weeklycatch))
+
+churn <- foo[which(downstream_point == "churn"),]
+sum(churn$weeklycatch)
+94475
+mean_richness <- append(mean_richness, mean(churn$richness))
+mean_catch <- append(mean_catch, mean(churn$weeklycatch))
+
+deadman <- foo[which(downstream_point == "deadman"),]
+sum(deadman$weeklycatch)
+226818
+mean_richness <- append(mean_richness, mean(deadman$richness))
+mean_catch <- append(mean_catch, mean(deadman$weeklycatch))
+
+
+deas <- foo[which(downstream_point == "deas"),]
+sum(deas$weeklycatch)
+254404
+mean_richness <- append(mean_richness, mean(deas$richness))
+mean_catch <- append(mean_catch, mean(deas$weeklycatch))
+
+
+harrison<- foo[which(downstream_point == "harrison fraser confluence"),]
+sum(harrison$weeklycatch)
+2357
+mean_richness <- append(mean_richness, mean(harrison$richness))
+mean_catch <- append(mean_catch, mean(harrison$weeklycatch))
+
+
+harrison_head <- foo[which(downstream_point == "head of harrison lake to lillooet river"),]
+sum(harrison_head$weeklycatch)
+31281
+mean_richness <- append(mean_richness, mean(harrison_head$richness))
+mean_catch <- append(mean_catch, mean(harrison_head$weeklycatch))
+
+
+hope <- foo[which(downstream_point == "hope"),]
+sum(hope$weeklycatch)
+7230348
+mean_richness <- append(mean_richness, mean(hope$richness))
+mean_catch <- append(mean_catch, mean(hope$weeklycatch))
+
+
+ipierre <- foo[which(downstream_point == "i. pierre"),]
+sum(ipierre$weeklycatch)
+63059
+mean_richness <- append(mean_richness, mean(ipierre$richness))
+mean_catch <- append(mean_catch, mean(ipierre$weeklycatch))
+
+
+marguerite <- foo[which(downstream_point == "marguerite"),]
+sum(marguerite$weeklycatch)
+67414
+mean_richness <- append(mean_richness, mean(marguerite$richness))
+mean_catch <- append(mean_catch, mean(marguerite$weeklycatch))
+
+
+mission <- foo[which(downstream_point == "mission"),]
+sum(mission$weeklycatch)
+6825463
+mean_richness <- append(mean_richness, mean(mission$richness))
+mean_catch <- append(mean_catch, mean(mission$weeklycatch))
+
+
+naver <- foo[which(downstream_point == "naver"),]
+sum(naver$weeklycatch)
+138747
+mean_richness <- append(mean_richness, mean(naver$richness))
+mean_catch <- append(mean_catch, mean(naver$weeklycatch))
+
+
+nechako <- foo[which(downstream_point == "nechako fraser confluence"),]
+sum(nechako$weeklycatch)
+132661
+mean_richness <- append(mean_richness, mean(nechako$richness))
+mean_catch <- append(mean_catch, mean(nechako$weeklycatch))
+
+
+ocean <- foo[which(downstream_point == "ocean"),]
+sum(ocean$weeklycatch)
+452101
+mean_richness <- append(mean_richness, mean(ocean$richness))
+mean_catch <- append(mean_catch, mean(ocean$weeklycatch))
+
+
+ocean2 <- foo[which(downstream_point == "ocean2"),]
+sum(ocean2$weeklycatch)
+2780723
+mean_richness <- append(mean_richness, mean(ocean2$richness))
+mean_catch <- append(mean_catch, mean(ocean2$weeklycatch))
+
+
+portmann<- foo[which(downstream_point == "port mann"),]
+sum(portmann$weeklycatch)
+1866049
+mean_richness <- append(mean_richness, mean(portmann$richness))
+mean_catch <- append(mean_catch, mean(portmann$weeklycatch))
+
+
+stuart <- foo[which(downstream_point == "stuart nechako confluence"),]
+sum(stuart$weeklycatch)
+170122
+mean_richness <- append(mean_richness, mean(stuart$richness))
+mean_catch <- append(mean_catch, mean(stuart$weeklycatch))
+
+
+texas <- foo[which(downstream_point == "texas"),]
+sum(texas$weeklycatch)
+508189
+mean_richness <- append(mean_richness, mean(texas$richness))
+mean_catch <- append(mean_catch, mean(texas$weeklycatch))
+
+
+texas2 <- foo[which(downstream_point == "texas2"),]
+sum(texas2$weeklycatch)
+999507
+mean_richness <- append(mean_richness, mean(texas2$richness))
+mean_catch <- append(mean_catch, mean(texas2$weeklycatch))
+
+
+thompsonbon <- foo[which(downstream_point == "thompson bonaparte confluence"),]
+sum(thompsonbon$weeklycatch)
+89041
+mean_richness <- append(mean_richness, mean(thompsonbon$richness))
+mean_catch <- append(mean_catch, mean(thompsonbon$weeklycatch))
+
+
+thompsonfras <- foo[which(downstream_point == "thompson fraser confluence"),]
+sum(thompsonfras$weeklycatch)
+165692
+mean_richness <- append(mean_richness, mean(thompsonfras$richness))
+mean_catch <- append(mean_catch, mean(thompsonfras$weeklycatch))
+
+
+head(birkenhead)
+
+fisheries <- unique(foo$downstream_point)
+
+richness1 <- data.frame(year, downstream_point, richness)
+
+
+sum_catch <- c(47465, 774222, 126852, 94475, 226818,
+               254404, 2357, 31281, 7230348, 63059,
+               67414, 6825463, 138747, 132661, 452101, 
+               2780723, 1866049, 170122, 508189, 999507, 
+               89041, 165692)
+
+
+
+hatcheries <- c(1,0,0,1,0,
+                1,1,1,1,1,
+                1,1,0,1,0,
+                0,1,0)
+habitat <- c(0,1,0,1,1,
+             1,0,1,0,1,
+             0,0,1,1,0,
+             1,1,0)
+hells <- c(0,1,1,1,0,
+           0,0,1,1,0,
+           1,1,0,0,1,
+           1,2,1)
+
+mydata <- data.frame(fisheries, sum_catch, mean_richness, mean_catch )
+mydata <- mydata[-c(2, 8, 16,20 ),]
+
+
+mydata <- data.frame(mydata, hatcheries,habitat, hells)
